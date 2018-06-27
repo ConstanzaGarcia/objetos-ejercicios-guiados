@@ -10,3 +10,15 @@ const transformEmployeeData = (array) => {
     }
     return arrayTheObject;
 }
+
+
+const transformEmployeeData = (array) => {
+    for (let aTranformar of arreglo) {
+        const objetoARetornar = {};
+        for (let llaveValor of aTranformar) {
+            objetoARetornar[llaveValor[0]] = llaveValor[1];
+        }
+        retorno.push(objetoARetornar);
+    }
+    return retorno;
+}
